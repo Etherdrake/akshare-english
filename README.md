@@ -8,16 +8,15 @@
 
 **AKShare** is an open-source Python library that provides comprehensive interfaces to China's financial data ecosystem. This repository contains the official English translation of AKShare documentation.
 
+## 📖 Live Documentation
+
+**👉 [https://Etherdrake.github.io/akshare-english/](https://Etherdrake.github.io/akshare-english/)**
+
+---
+
 ## About AKShare
 
 [AKShare](https://github.com/akfamily/akshare) is created and maintained by **Albert King** and has processed over 2 million data points daily from publicly available Chinese sources. The library transforms raw HTML, JSON feeds, and PDF disclosures into clean, pandas-compatible dataframes.
-
-## Documentation
-
-- **[📖 Read the Docs](https://akshare-english.readthedocs.io/)** - Browse the full documentation
-- **[🚀 Quick Start](docs/quickstart.md)** - Get started in 5 minutes
-- **[📚 API Reference](docs/api-reference/)** - Complete function documentation
-- **[📓 Notebooks](notebooks/)** - Interactive examples
 
 ## Quick Start
 
@@ -57,6 +56,18 @@ index_data = ak.index_zh_a_hist(
 | **Indices** | CSI 300/500/1000, sector indexes, thematic indexes |
 | **Crypto** | Spot and futures from major exchanges |
 
+## Documentation
+
+| Guide | File |
+|-------|------|
+| **🚀 Quick Start** | [docs/quickstart.md](docs/quickstart.md) |
+| **📚 API Tutorial** | [docs/tutorial.md](docs/tutorial.md) |
+| **💻 Installation** | [docs/installation.md](docs/installation.md) |
+| **📊 Indicators** | [docs/indicators.md](docs/indicators.md) |
+| **📈 Strategies** | [docs/strategies.md](docs/strategies.md) |
+| **🐳 Docker** | [docs/docker.md](docs/docker.md) |
+| **❓ FAQ** | [docs/faq.md](docs/faq.md) |
+
 ## Documentation Structure
 
 ```
@@ -65,33 +76,34 @@ docs/
 ├── introduction.md       # Project overview
 ├── installation.md       # Installation guide
 ├── quickstart.md         # Quick start tutorial
-├── data_dictionary.md    # Data reference
-├── indicators.md         # Technical indicators
-├── data_tips.md          # Data usage tips
-├── trading.md            # Live trading integration
-├── faq.md                # Frequently asked questions
-├── tutorial.md           # Tutorials
-├── articles.md           # Related articles
-├── environment.md        # Environment setup
-├── platform.md          # Quantitative platforms
-├── demo.md              # Strategy examples
-├── changelog.md          # Version history
-├── contributing.md       # Contribution guidelines
-├── dependency.md         # Dependencies
-├── http_deploy.md        # HTTP API deployment
-├── docker.md            # Docker deployment
-└── special.md           # Special notes
+├── tutorial.md           # Complete API tutorial
+├── strategies.md         # Trading strategies
+├── indicators.md        # Technical indicators
+├── data-tips.md         # Data usage tips
+├── trading.md           # Live trading integration
+├── platform.md          # Platform integration
+├── environment.md       # Environment setup
+├── http-deploy.md       # HTTP API deployment
+├── docker.md           # Docker deployment
+├── contributing.md     # Contribution guide
+├── changelog.md        # Version history
+├── faq.md              # FAQ
+├── articles.md         # Related articles
+├── special.md          # Special notes
+└── data/
+    └── index.md        # API reference index
 ```
 
 ## Resources
 
 | Resource | Link |
 |----------|------|
-| **Original AKShare** | [GitHub](https://github.com/akfamily/akshare) |
-| **Chinese Docs** | [akshare.akfamily.xyz](https://akshare.akfamily.xyz) |
-| **PyPI Package** | [pypi.org/project/akshare](https://pypi.org/project/akshare/) |
-| **Issues** | [GitHub Issues](https://github.com/akfamily/akshare/issues) |
-| **AKTools (HTTP API)** | [aktools.akfamily.xyz](https://aktools.akfamily.xyz/) |
+| **🌐 Live Docs** | https://Etherdrake.github.io/akshare-english/ |
+| **📚 Original Docs** | https://akshare.akfamily.xyz |
+| **🐙 GitHub** | https://github.com/akfamily/akshare |
+| **📦 PyPI** | https://pypi.org/project/akshare |
+| **🐛 Issues** | https://github.com/akfamily/akshare/issues |
+| **🔧 AKTools** | https://aktools.akfamily.xyz/ |
 
 ## Contributing
 
@@ -109,6 +121,6 @@ Copyright © 2022-present, Albert King. See [LICENSE](LICENSE) for details.
 
 **🌏 Bridging China's Markets to the World**
 
-[AKShare](https://github.com/akfamily/akshare) | [Documentation](https://akshare.akfamily.xyz) | [Issues](https://github.com/akfamily/akshare/issues)
+[🌐 Live Docs](https://Etherdrake.github.io/akshare-english/) | [GitHub](https://github.com/akfamily/akshare) | [Issues](https://github.com/akfamily/akshare/issues)
 
 </div>
