@@ -1,0 +1,1432 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The definitive English gateway to China's financial market data">
+      
+      
+        <meta name="author" content="Albert King">
+      
+      
+        <link rel="canonical" href="https://your-username.github.io/akshare-english/installation/">
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+        <link rel="next" href="../quickstart/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Installation - AKShare English Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#akshare-installation-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AKShare English Documentation" class="md-header__button md-logo" aria-label="AKShare English Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AKShare English Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AKShare English Documentation" class="md-nav__button md-logo" aria-label="AKShare English Documentation" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    AKShare English Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-akshare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing AKShare
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing AKShare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#china-installation-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      China Installation - Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#china-installation-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      China Installation - Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-akshare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading AKShare
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-silicon-m-series-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apple Silicon (M-Series) Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r-language-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      R Language Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="R Language Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-r-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing R Language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-r-language-to-latest-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading R Language to Latest Version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-r-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing R Packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matlab-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      MATLAB Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MATLAB Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-anaconda_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing MATLAB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-environment-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Environment Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-akshare-interface-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing AKShare Interface Calls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-data-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting Data Formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-installation-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Installation Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Installation Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installation-timeout-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Installation Timeout Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-permission-denied-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Permission Denied Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-other-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Other Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indicators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Indicators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Tips
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trading
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Platform
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../http-deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTTP API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-akshare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing AKShare
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing AKShare">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#china-installation-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      China Installation - Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#china-installation-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      China Installation - Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-akshare" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading AKShare
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-silicon-m-series-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apple Silicon (M-Series) Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r-language-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      R Language Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="R Language Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-anaconda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-r-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing R Language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrading-r-language-to-latest-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading R Language to Latest Version
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-r-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing R Packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matlab-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      MATLAB Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MATLAB Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-anaconda_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Anaconda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing MATLAB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-environment-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Environment Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-akshare-interface-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing AKShare Interface Calls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-data-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Converting Data Formats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-installation-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Installation Errors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Installation Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installation-timeout-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Installation Timeout Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-permission-denied-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Permission Denied Error
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-other-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Other Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="akshare-installation-guide">AKShare Installation Guide<a class="headerlink" href="#akshare-installation-guide" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>This documentation is an English translation of the original <a href="https://akshare.akfamily.xyz">AKShare documentation</a>.
+The authoritative source for this project is the <a href="https://github.com/akfamily/akshare">AKShare GitHub repository</a>.</p>
+</blockquote>
+<p><em>Back to <a href="https://akshare.akfamily.xyz/install.html">original Chinese documentation →</a></em></p>
+<hr />
+<h2 id="important-notes">Important Notes<a class="headerlink" href="#important-notes" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Currently, <a href="https://github.com/akfamily/akshare">AKShare</a> only supports installation and use on 64-bit operating systems.</p>
+</li>
+<li>
+<p>Currently, <a href="https://github.com/akfamily/akshare">AKShare</a> only supports <a href="https://www.python.org/">Python</a> 3.8 (64-bit) and above. We recommend <a href="https://www.python.org/">Python</a> 3.11.x (64-bit) version.</p>
+</li>
+<li>
+<p><a href="https://github.com/akfamily/akshare">AKShare</a> recommends installing the latest version of <a href="https://www.anaconda.com/">Anaconda (64-bit)</a>, which can solve most environment configuration problems.</p>
+</li>
+<li>
+<p>For users familiar with container technology, Docker can be installed and used. See the tutorial: <a href="../docker/">AKShare Docker Deployment</a>.</p>
+</li>
+</ol>
+<hr />
+<h2 id="installing-akshare">Installing AKShare<a class="headerlink" href="#installing-akshare" title="Permanent link">&para;</a></h2>
+<h3 id="standard-installation">Standard Installation<a class="headerlink" href="#standard-installation" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>akshare<span class="w"> </span>--upgrade
+</code></pre></div>
+
+<p><strong>Note:</strong> When running the program, the filename and folder name cannot be "akshare".</p>
+<hr />
+<h3 id="china-installation-python">China Installation - Python<a class="headerlink" href="#china-installation-python" title="Permanent link">&para;</a></h3>
+<p>For users in China, use the following command with Tsinghua mirror:</p>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>akshare<span class="w"> </span>--upgrade<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre></div>
+
+<hr />
+<h3 id="china-installation-anaconda">China Installation - Anaconda<a class="headerlink" href="#china-installation-anaconda" title="Permanent link">&para;</a></h3>
+<p>For Anaconda users in China:</p>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>akshare<span class="w"> </span>--upgrade<span class="w"> </span>--user<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre></div>
+
+<hr />
+<h2 id="upgrading-akshare">Upgrading AKShare<a class="headerlink" href="#upgrading-akshare" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>Note:</strong> Due to frequent version updates, please upgrade before using <a href="https://github.com/akfamily/akshare">AKShare</a>:</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>akshare<span class="w"> </span>--upgrade<span class="w"> </span>-i<span class="w"> </span>https://pypi.org/simple
+</code></pre></div>
+
+<hr />
+<h2 id="apple-silicon-m-series-support">Apple Silicon (M-Series) Support<a class="headerlink" href="#apple-silicon-m-series-support" title="Permanent link">&para;</a></h2>
+<ol>
+<li>AKShare now natively supports Apple M-series chips. Simply use:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>akshare<span class="w"> </span>--upgrade
+</code></pre></div>
+
+<ol>
+<li>If compilation is required, please refer to: <a href="https://joyeecheung.github.io/blog/2021/08/27/binding-v8-on-an-m1-macbook/">Building V8 on an M1 MacBook</a></li>
+</ol>
+<hr />
+<h2 id="raspberry-pi-support">Raspberry Pi Support<a class="headerlink" href="#raspberry-pi-support" title="Permanent link">&para;</a></h2>
+<p>AKShare now supports installation and use on Raspberry Pi 4B. Installation method:</p>
+<ol>
+<li>
+<p>Install <a href="https://www.raspberrypi.com/software/operating-systems/">Raspberry Pi OS (64-bit)</a> - currently supports the 64-bit version released on 20231010</p>
+</li>
+<li>
+<p>Install virtual environment support:</p>
+</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-venv
+</code></pre></div>
+
+<ol>
+<li>Create a virtual environment named "myenv":</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myenv
+</code></pre></div>
+
+<ol>
+<li>Activate the virtual environment:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>myenv/bin/activate
+</code></pre></div>
+
+<ol>
+<li>Install AKShare:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>akshare<span class="w"> </span>--upgrade
+</code></pre></div>
+
+<hr />
+<h2 id="r-language-support">R Language Support<a class="headerlink" href="#r-language-support" title="Permanent link">&para;</a></h2>
+<h3 id="installing-anaconda">Installing Anaconda<a class="headerlink" href="#installing-anaconda" title="Permanent link">&para;</a></h3>
+<p>Download and install <a href="https://www.anaconda.com/">Anaconda</a> for your operating system.</p>
+<hr />
+<h3 id="installing-r-language">Installing R Language<a class="headerlink" href="#installing-r-language" title="Permanent link">&para;</a></h3>
+<p>Install <a href="https://www.r-project.org/">R</a> for your operating system.</p>
+<hr />
+<h3 id="upgrading-r-language-to-latest-version">Upgrading R Language to Latest Version<a class="headerlink" href="#upgrading-r-language-to-latest-version" title="Permanent link">&para;</a></h3>
+<p><strong>Windows:</strong>
+1. Open RGui as administrator
+2. Run: <code>install.packages("installr")</code>
+3. Run: <code>installr::updateR()</code></p>
+<p><strong>Mac:</strong>
+1. Install <a href="https://www.xquartz.org/">XQuartz</a>
+2. Run the following in terminal:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Add Homebrew</span>
+/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+
+<span class="c1"># Add R Homebrew tap</span>
+brew<span class="w"> </span>tap<span class="w"> </span>homebrew/core
+
+<span class="c1"># Install R</span>
+brew<span class="w"> </span>install<span class="w"> </span>r
+</code></pre></div>
+
+<hr />
+<h3 id="installing-r-packages">Installing R Packages<a class="headerlink" href="#installing-r-packages" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Install the Anaconda environment first</li>
+<li>Open R in the Anaconda environment</li>
+<li>Install the following packages:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;reticulate&quot;</span><span class="p">)</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;httr&quot;</span><span class="p">)</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;jsonlite&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<ol>
+<li>Configure Python path in R:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">reticulate</span><span class="p">)</span>
+<span class="nf">use_python</span><span class="p">(</span><span class="s">&quot;/your/path/to/anaconda3/bin/python&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">required</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span>
+</code></pre></div>
+
+<hr />
+<h3 id="matlab-support">MATLAB Support<a class="headerlink" href="#matlab-support" title="Permanent link">&para;</a></h3>
+<h4 id="installing-anaconda_1">Installing Anaconda<a class="headerlink" href="#installing-anaconda_1" title="Permanent link">&para;</a></h4>
+<p>Download and install <a href="https://www.anaconda.com/">Anaconda</a> for your operating system.</p>
+<hr />
+<h4 id="installing-matlab">Installing MATLAB<a class="headerlink" href="#installing-matlab" title="Permanent link">&para;</a></h4>
+<p>Download and install <a href="https://www.mathworks.com/products/matlab.html">MATLAB</a> for your operating system.</p>
+<hr />
+<h4 id="configuring-environment">Configuring Environment<a class="headerlink" href="#configuring-environment" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Open Anaconda Prompt (Windows) or Terminal (Mac/Linux)</li>
+<li>Create a new environment:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>akshare<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.11
+conda<span class="w"> </span>activate<span class="w"> </span>akshare
+pip<span class="w"> </span>install<span class="w"> </span>akshare
+</code></pre></div>
+
+<ol>
+<li>Open MATLAB and configure Python:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="nb">pyenv</span><span class="p">(</span><span class="n">Version</span><span class="p">=</span><span class="s">&quot;/your/path/to/anaconda3/envs/akshare/bin/python&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ExecutionMode</span><span class="p">=</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+
+<h5 id="testing-environment-configuration">Testing Environment Configuration<a class="headerlink" href="#testing-environment-configuration" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="c">% Test Python environment</span>
+<span class="n">py</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Hello, AKShare from MATLAB!&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+<h5 id="testing-akshare-interface-calls">Testing AKShare Interface Calls<a class="headerlink" href="#testing-akshare-interface-calls" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="c">% Test without parameters</span>
+<span class="n">data</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">py</span><span class="p">.</span><span class="n">akshare</span><span class="p">.</span><span class="n">stock_market_summary</span><span class="p">();</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+
+<span class="c">% Test with parameters</span>
+<span class="n">data</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">py</span><span class="p">.</span><span class="n">akshare</span><span class="p">.</span><span class="n">stock_fundamental_flow</span><span class="p">(</span><span class="nb">pyargs</span><span class="p">(</span><span class="s">&quot;symbol&quot;</span><span class="p">,</span><span class="s">&quot;600519&quot;</span><span class="p">,</span><span class="s">&quot;period&quot;</span><span class="p">,</span><span class="s">&quot;annual&quot;</span><span class="p">));</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+</code></pre></div>
+
+<h5 id="converting-data-formats">Converting Data Formats<a class="headerlink" href="#converting-data-formats" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span><code><span class="c">% Convert to table</span>
+<span class="n">data_table</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nb">table</span><span class="p">(</span><span class="n">data</span><span class="p">.</span><span class="n">Values</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;VariableNames&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="n">Properties</span><span class="p">.</span><span class="n">RowNames</span><span class="p">);</span>
+
+<span class="c">% Export to CSV</span>
+<span class="nb">writetable</span><span class="p">(</span><span class="n">data_table</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;akshare_data.csv&#39;</span><span class="p">);</span>
+</code></pre></div>
+
+<hr />
+<h2 id="troubleshooting-installation-errors">Troubleshooting Installation Errors<a class="headerlink" href="#troubleshooting-installation-errors" title="Permanent link">&para;</a></h2>
+<h3 id="1-installation-timeout-error">1. Installation Timeout Error<a class="headerlink" href="#1-installation-timeout-error" title="Permanent link">&para;</a></h3>
+<p>This is usually caused by slow network or timeout when downloading packages.</p>
+<p><strong>Solution:</strong>
+- Use China mirror source: <code>pip install akshare -i https://pypi.tuna.tsinghua.edu.cn/simple</code>
+- Increase timeout: <code>pip install akshare --default-timeout=100</code></p>
+<h3 id="2-permission-denied-error">2. Permission Denied Error<a class="headerlink" href="#2-permission-denied-error" title="Permanent link">&para;</a></h3>
+<p><strong>Solution:</strong>
+- Use user installation: <code>pip install akshare --user</code>
+- Use virtual environment</p>
+<h3 id="3-other-errors">3. Other Errors<a class="headerlink" href="#3-other-errors" title="Permanent link">&para;</a></h3>
+<p>If you encounter other errors:</p>
+<ol>
+<li>Check Python version: <code>python --version</code> (must be 3.8+)</li>
+<li>Check system architecture: Must be 64-bit</li>
+<li>Update pip: <code>pip install --upgrade pip</code></li>
+<li>Install Visual C++ Build Tools (Windows)</li>
+</ol>
+<hr />
+<h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../introduction/">Introduction</a> - Project overview</li>
+<li><a href="../tutorial/">Quick Start</a> - Get started tutorial</li>
+<li><a href="../data/">API Reference</a> - Complete data interfaces</li>
+<li><a href="../contributing/">Contributing</a> - How to contribute</li>
+</ul>
+<hr />
+<div align="center">
+
+**AKShare** | *Open Data. Open Minds.*
+
+[GitHub](https://github.com/akfamily/akshare) • [Documentation](https://akshare.akfamily.xyz) • [Issues](https://github.com/akfamily/akshare/issues)
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024-present Albert King. Documentation licensed under MIT.
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/akfamily/akshare" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/akshare" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
