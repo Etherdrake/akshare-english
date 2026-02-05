@@ -1,0 +1,56 @@
+site_name: AKShare English Documentation
+site_description: The definitive English gateway to China's financial market data
+site_author: Albert King
+site_url: https://your-username.github.io/akshare-english/
+
+docs_dir: docs
+site_dir: site
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - Tutorial: tutorial.md
+  - Strategies: strategies.md
+  - Indicators: indicators.md
+  - Data Tips: data-tips.md
+  - Trading: trading.md
+  - Platform: platform.md
+  - HTTP API: http-deploy.md
+  - Docker: docker.md
+  - FAQ: faq.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: blue
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/akfamily/akshare
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/akshare
+
+copyright: |
+  &copy; 2024-present Albert King. Documentation licensed under MIT.
