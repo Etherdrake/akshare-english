@@ -1,94 +1,53 @@
-# AKShare Project Overview
+# [AKShare](https://github.com/akfamily/akshare) 项目概览
 
-> This documentation is an English translation of the original [AKShare documentation](https://akshare.akfamily.xyz).
-> The authoritative source for this project is the [AKShare GitHub repository](https://github.com/akfamily/akshare).
+本次发布 [AKTools](https://github.com/akfamily/aktools) 作为 AKShare 的 HTTP API 版本，突破 Python 语言的限制，欢迎各位小伙伴试用并提出更好的意见或建议！
+点击 [AKTools](https://github.com/akfamily/aktools) 查看使用指南。
 
-*Back to [original Chinese documentation →](https://akshare.akfamily.xyz/introduction.html)*
+**风险提示**：[AKShare](https://github.com/akfamily/akshare) 开源财经数据接口库所采集的数据皆来自公开的数据源，不涉及任何个人隐私数据和非公开数据。
+同时本项目提供的数据接口及相关数据仅用于学术研究，任何个人、机构及团体使用本项目的数据接口及相关数据请注意商业风险。
 
----
+1. 本文档更新时间：**2026-02-14**；
+2. 如有 [AKShare](https://github.com/akfamily/akshare) 库、文档及数据的相关问题，请在 [AKShare Issues](https://github.com/akfamily/akshare/issues) 中提 Issues；
 
-## Latest Release
+## 引用
 
-This release includes [AKTools](https://github.com/akfamily/aktools) as the HTTP API version of AKShare, breaking through Python language limitations. Welcome to try it out and provide feedback!
+如果您想在文章或者项目中引用 [AKShare](https://github.com/akfamily/akshare/)，请使用如下 **bibtex** 格式：
 
-Click [AKTools](https://github.com/akfamily/aktools) to view the user guide.
-
-## Risk Disclaimer
-
-[AKShare](https://github.com/akfamily/akshare) open-source financial data interface library collects all data from publicly available data sources and does not involve any personal privacy data or non-public data.
-
-At the same time, the data interfaces and related data provided by this project are for academic research purposes only. Any individual, institution, or organization using the data interfaces and related data of this project should pay attention to commercial risks.
-
-- **Documentation last updated:** 2026-02-04
-- **Questions?** Please submit issues at [AKShare Issues](https://github.com/akfamily/akshare/issues)
-
----
-
-## Citation
-
-If you wish to cite [AKShare](https://github.com/akfamily/akshare/) in your articles or projects, please use the following bibtex format:
-
-```bibtex
+```
 @misc{akshare2022,
-  author = {Albert King},
-  title = {AKShare},
-  year = {2022},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/akfamily/akshare}},
+    author = {Albert King},
+    title = {AKShare},
+    year = {2022},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/akfamily/akshare}},
 }
 ```
 
----
+## [AKShare](https://github.com/akfamily/akshare) 的介绍
 
-## Introduction to AKShare
+首先要特别感谢 [FuShare](https://github.com/LowinLi/fushare) 和 [TuShare](https://github.com/waditu/tushare) 在代码和项目开发上对本项目提供的借鉴和学习的机会!
 
-First, I would like to express special thanks to [FuShare](https://github.com/LowinLi/fushare) and [TuShare](https://github.com/waditu/tushare) for their reference and learning opportunities provided in code and project development!
+[AKShare](https://github.com/akfamily/akshare) 是基于 Python 的财经数据接口库，目的是实现对股票、期货、期权、基金、外汇、债券、指数、加密货币等金融产品的基本面数据、实时和历史行情数据、衍生数据从数据采集、数据清洗到数据落地的一套工具，主要用于学术研究目的。
 
-[AKShare](https://github.com/akfamily/akshare) is a financial data interface library based on Python. The goal is to achieve data acquisition, cleaning, and storage for fundamental data, real-time and historical market data, and derivative data of financial products such as stocks, futures, options, funds, forex, bonds, indexes, and cryptocurrencies. It is primarily designed for academic research purposes.
+[AKShare](https://github.com/akfamily/akshare) 的特点是获取的是相对权威的财经数据网站公布的原始数据，通过利用原始数据进行各数据源之间的交叉验证，进而再加工，从而得出科学的结论。
 
-The characteristic of [AKShare](https://github.com/akfamily/akshare) is that it obtains relatively authoritative original data published by financial data websites. By using original data for cross-validation between data sources, and then reprocessing, scientific conclusions can be drawn.
+**[AKShare](https://github.com/akfamily/akshare) 后续会基于学术论文和研究报告来添加更多数据接口和衍生指标，并提供相应的计算代码，敬请关注。**
 
-[AKShare](https://github.com/akfamily/akshare) will subsequently add more data interfaces and derivative indicators based on academic papers and research reports, and provide corresponding calculation codes. Please stay tuned.
+## [AKShare](https://github.com/akfamily/akshare) 的特色
 
----
+[AKShare](https://github.com/akfamily/akshare) 主要改进如下：
 
-## Key Features of AKShare
+1. 代码语法符合 [PEP8](https://peps.python.org/pep-0008/) 规范，数据接口的命名统一；
+2. 最佳支持 Python 3.12 及其以上版本；
+3. 提供最佳的文档支持，每个数据接口均提供详细的说明和示例，只需要复制粘贴就可以下载数据；
+4. 持续维护由于目标网页变化而导致的部分数据接口运行异常问题；
+5. 持续更新财经数据接口，同时优化源代码；
+6. 提供完善的接口文档，提高 [AKShare](https://github.com/akfamily/akshare) 的易用性；
+7. 对于非 Python 用户，提供 HTTP API 接口工具 [AKTools](https://aktools.akfamily.xyz/)。
 
-[AKShare](https://github.com/akfamily/akshare) main improvements include:
+## [AKShare](https://github.com/akfamily/akshare) 的初衷
 
-- **Code Standards:** Syntax follows [PEP8](https://peps.python.org/pep-0008/) specifications, with unified naming conventions for data interfaces
-- **Python Support:** Best support for Python 3.12 and above
-- **Documentation:** Comprehensive documentation for each data interface with detailed explanations and examples - just copy and paste to download data
-- **Maintenance:** Continuous maintenance for interface exceptions caused by target webpage changes
-- **Updates:** Continuous updates to financial data interfaces and optimization of source code
-- **Interface Documentation:** Complete interface documentation to improve the usability of [AKShare](https://github.com/akfamily/akshare)
-- **HTTP API:** For non-Python users, provides HTTP API interface tool [AKTools](https://aktools.akfamily.xyz/)
-
----
-
-## Original Purpose of AKShare
-
-[AKShare](https://akfamily/akshare) is primarily used for financial research, solving the problem of data acquisition in financial research. The current version is mainly based on Python language, obtaining data by calling relevant data interfaces. The principle is to run Python code locally to collect data from the network in real-time, making it convenient for data analysis.
-
-Since network data collection requires maintaining numerous interfaces, and often requires maintenance and updates due to changes in target webpage formats, users need to frequently update the project to the latest version during use. It is also important to follow documentation updates, as the latest usage methods and interface changes will be updated to the documentation first.
-
----
-
-## See Also
-
-- [Installation Guide](installation.md) - Set up AKShare
-- [Quick Start](tutorial.md) - Get started quickly
-- [API Reference](data/index.md) - Complete function documentation
-- [Data Dictionary](data/index.md) - Available data interfaces
-- [Contributing](contributing.md) - How to contribute
-
----
-
-<div align="center">
-
-**AKShare** | *Open Data. Open Minds.*
-
-[GitHub](https://github.com/akfamily/akshare) • [Documentation](https://akshare.akfamily.xyz) • [Issues](https://github.com/akfamily/akshare/issues)
-
-</div>
+[AKShare](https://github.com/akfamily/akshare) 主要是用于财经研究，解决在财经研究中数据获取的问题。目前的版本主要是基于 Python
+语言，通过调用相关的数据接口来获取数据到本地。原理上，就是在用户本地运行 Python
+代码，实时从网络采集数据到本地，便利与数据分析。由于网络数据采集需要维护的接口众多，且经常由于目标网站变换网页格式需要维护及更新相关接口，所以用户在使用本项目的过程中需要经常更新本项目到最新版本。同时也需要关注项目文档的更新，因为最新的使用方式和接口变更都会第一时间更新到文档中。
