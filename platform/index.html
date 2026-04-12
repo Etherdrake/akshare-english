@@ -1141,7 +1141,7 @@
 <p><strong>Website:</strong> https://www.ricequant.com</p>
 <p>RiceQuant provides a cloud-based quantitative research platform with AKShare data integration.</p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># RiceQuant API</span>
-<span class="kn">import</span> <span class="nn">rqdatac</span> <span class="k">as</span> <span class="nn">rq</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rqdatac</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">rq</span>
 
 <span class="c1"># Get data</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">get_price</span><span class="p">(</span><span class="s2">&quot;600519&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s2">&quot;2024-01-01&quot;</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="s2">&quot;2024-01-31&quot;</span><span class="p">)</span>
@@ -1152,7 +1152,7 @@
 <p><strong>Website:</strong> https://www.joinquant.com</p>
 <p>JoinQuant offers quantitative research tools and AKShare data access.</p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># JoinQuant API</span>
-<span class="kn">import</span> <span class="nn">jqdatasdk</span> <span class="k">as</span> <span class="nn">jq</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">jqdatasdk</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">jq</span>
 
 <span class="c1"># Authenticate</span>
 <span class="n">jq</span><span class="o">.</span><span class="n">auth</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
@@ -1165,7 +1165,7 @@
 <h2 id="3-tushare">3. TuShare<a class="headerlink" href="#3-tushare" title="Permanent link">&para;</a></h2>
 <p><strong>Website:</strong> https://tushare.pro</p>
 <p>TuShare is another Chinese financial data platform.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">tushare</span> <span class="k">as</span> <span class="nn">ts</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tushare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ts</span>
 
 <span class="c1"># Initialize</span>
 <span class="n">ts</span><span class="o">.</span><span class="n">set_token</span><span class="p">(</span><span class="s2">&quot;your_token&quot;</span><span class="p">)</span>
@@ -1179,8 +1179,8 @@
 <h2 id="4-vnpy-integration">4. vn.py Integration<a class="headerlink" href="#4-vnpy-integration" title="Permanent link">&para;</a></h2>
 <p><strong>Website:</strong> https://www.vnpy.com</p>
 <p>vn.py is an open-source quantitative trading framework.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">vnpy.app.cta_strategy</span> <span class="kn">import</span> <span class="n">CtaStrategy</span>
-<span class="kn">from</span> <span class="nn">vnpy.data.akshare</span> <span class="kn">import</span> <span class="n">AkshareData</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">vnpy.app.cta_strategy</span><span class="w"> </span><span class="kn">import</span> <span class="n">CtaStrategy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">vnpy.data.akshare</span><span class="w"> </span><span class="kn">import</span> <span class="n">AkshareData</span>
 
 <span class="c1"># Create data feed</span>
 <span class="n">datafeed</span> <span class="o">=</span> <span class="n">AkshareData</span><span class="p">()</span>
@@ -1190,10 +1190,10 @@
 <h2 id="5-backtrader">5. Backtrader<a class="headerlink" href="#5-backtrader" title="Permanent link">&para;</a></h2>
 <p><strong>Website:</strong> https://www.backtrader.com</p>
 <p>Backtrader is a Python library for backtesting and live trading.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">backtrader</span> <span class="k">as</span> <span class="nn">bt</span>
-<span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">backtrader</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">bt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
-<span class="k">class</span> <span class="nc">AKShareData</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">feeds</span><span class="o">.</span><span class="n">PandasData</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">AKShareData</span><span class="p">(</span><span class="n">bt</span><span class="o">.</span><span class="n">feeds</span><span class="o">.</span><span class="n">PandasData</span><span class="p">):</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">(</span>
         <span class="p">(</span><span class="s1">&#39;datatype&#39;</span><span class="p">,</span> <span class="s1">&#39;stock_zh_a_daily&#39;</span><span class="p">),</span>
         <span class="p">(</span><span class="s1">&#39;symbol&#39;</span><span class="p">,</span> <span class="s1">&#39;600519&#39;</span><span class="p">),</span>
@@ -1204,7 +1204,7 @@
 <h2 id="6-zipline">6. Zipline<a class="headerlink" href="#6-zipline" title="Permanent link">&para;</a></h2>
 <p><strong>Website:</strong> https://zipline.ml4quant.com</p>
 <p>Zipline is an algorithmic trading library.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">zipline.data</span> <span class="kn">import</span> <span class="n">akshare_bundle</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">zipline.data</span><span class="w"> </span><span class="kn">import</span> <span class="n">akshare_bundle</span>
 
 <span class="c1"># Load AKShare data bundle</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">akshare_bundle</span><span class="o">.</span><span class="n">bundle</span><span class="p">()</span>
@@ -1213,9 +1213,9 @@
 <hr />
 <h2 id="local-development">Local Development<a class="headerlink" href="#local-development" title="Permanent link">&para;</a></h2>
 <h3 id="jupyter-setup">Jupyter Setup<a class="headerlink" href="#jupyter-setup" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># Get data</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zh_a_daily</span><span class="p">(</span><span class="n">symbol</span><span class="o">=</span><span class="s2">&quot;600519&quot;</span><span class="p">)</span>

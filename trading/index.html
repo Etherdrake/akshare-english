@@ -1035,7 +1035,7 @@
 </code></pre></div>
 
 <p><strong>Usage:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">easytrader</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">easytrader</span>
 
 <span class="c1"># Connect to trading terminal</span>
 <span class="n">user</span> <span class="o">=</span> <span class="n">easytrader</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;galaxy&#39;</span><span class="p">)</span>
@@ -1063,15 +1063,15 @@
 </code></pre></div>
 
 <p><strong>Integration:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">vnpy.app.cta_strategy</span> <span class="kn">import</span> <span class="n">CtaStrategy</span>
-<span class="kn">from</span> <span class="nn">akshare</span> <span class="kn">import</span> <span class="n">stock_zh_a_spot_em</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">vnpy.app.cta_strategy</span><span class="w"> </span><span class="kn">import</span> <span class="n">CtaStrategy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="kn">import</span> <span class="n">stock_zh_a_spot_em</span>
 
-<span class="k">class</span> <span class="nc">MyStrategy</span><span class="p">(</span><span class="n">CtaStrategy</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">strategy_name</span><span class="p">,</span> <span class="n">vt_symbols</span><span class="p">,</span> <span class="n">setting</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyStrategy</span><span class="p">(</span><span class="n">CtaStrategy</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">strategy_name</span><span class="p">,</span> <span class="n">vt_symbols</span><span class="p">,</span> <span class="n">setting</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">strategy_name</span><span class="p">,</span> <span class="n">vt_symbols</span><span class="p">,</span> <span class="n">setting</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span> <span class="o">=</span> <span class="s2">&quot;600519&quot;</span>
 
-    <span class="k">def</span> <span class="nf">on_bar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bar</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">on_bar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bar</span><span class="p">):</span>
         <span class="c1"># Get data from AKShare</span>
         <span class="n">df</span> <span class="o">=</span> <span class="n">stock_zh_a_spot_em</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
         <span class="c1"># Implement strategy logic</span>
@@ -1085,7 +1085,7 @@
 <hr />
 <h2 id="trading-api-examples">Trading API Examples<a class="headerlink" href="#trading-api-examples" title="Permanent link">&para;</a></h2>
 <h3 id="simple-order-entry">Simple Order Entry<a class="headerlink" href="#simple-order-entry" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get real-time quotes before trading</span>
 <span class="n">quote</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zh_a_spot_em</span><span class="p">(</span><span class="s2">&quot;600519&quot;</span><span class="p">)</span>
@@ -1093,7 +1093,7 @@
 </code></pre></div>
 
 <h3 id="market-data-for-strategy">Market Data for Strategy<a class="headerlink" href="#market-data-for-strategy" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get historical data for backtesting</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zh_a_daily</span><span class="p">(</span>
@@ -1105,7 +1105,7 @@
 </code></pre></div>
 
 <h3 id="multiple-symbol-analysis">Multiple Symbol Analysis<a class="headerlink" href="#multiple-symbol-analysis" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get market overview</span>
 <span class="n">market</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_market_summary</span><span class="p">()</span>
@@ -1119,7 +1119,7 @@
 <hr />
 <h2 id="risk-management">Risk Management<a class="headerlink" href="#risk-management" title="Permanent link">&para;</a></h2>
 <h3 id="position-sizing">Position Sizing<a class="headerlink" href="#position-sizing" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">calculate_position</span><span class="p">(</span><span class="n">capital</span><span class="p">,</span> <span class="n">risk_per_trade</span><span class="p">,</span> <span class="n">stop_loss</span><span class="p">):</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_position</span><span class="p">(</span><span class="n">capital</span><span class="p">,</span> <span class="n">risk_per_trade</span><span class="p">,</span> <span class="n">stop_loss</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate position size based on risk management.&quot;&quot;&quot;</span>
     <span class="n">risk_amount</span> <span class="o">=</span> <span class="n">capital</span> <span class="o">*</span> <span class="n">risk_per_trade</span>
     <span class="n">position_size</span> <span class="o">=</span> <span class="n">risk_amount</span> <span class="o">/</span> <span class="n">stop_loss</span>
@@ -1127,7 +1127,7 @@
 </code></pre></div>
 
 <h3 id="stop-loss-example">Stop Loss Example<a class="headerlink" href="#stop-loss-example" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">apply_stop_loss</span><span class="p">(</span><span class="n">entry_price</span><span class="p">,</span> <span class="n">stop_pct</span><span class="p">):</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">apply_stop_loss</span><span class="p">(</span><span class="n">entry_price</span><span class="p">,</span> <span class="n">stop_pct</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate stop loss price.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">entry_price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">stop_pct</span><span class="p">)</span>
 </code></pre></div>

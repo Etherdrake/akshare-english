@@ -1319,18 +1319,18 @@
 <h3 id="python-style">Python Style<a class="headerlink" href="#python-style" title="Permanent link">&para;</a></h3>
 <p>Follow <a href="https://peps.python.org/pep-0008/">PEP 8</a> guidelines:</p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># Good</span>
-<span class="k">def</span> <span class="nf">calculate_moving_average</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">window</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_moving_average</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">window</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate moving average for given data.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
 <span class="c1"># Avoid</span>
-<span class="k">def</span> <span class="nf">calculateMA</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">window</span><span class="p">):</span>  <span class="c1"># No spaces, camelCase</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculateMA</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">window</span><span class="p">):</span>  <span class="c1"># No spaces, camelCase</span>
     <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>  <span class="c1"># Missing docstring</span>
 </code></pre></div>
 
 <h3 id="function-documentation">Function Documentation<a class="headerlink" href="#function-documentation" title="Permanent link">&para;</a></h3>
 <p>Every function should have a docstring:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">stock_market_summary</span><span class="p">():</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">stock_market_summary</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get real-time A-share market summary.</span>
 
@@ -1371,7 +1371,7 @@ mypy<span class="w"> </span>akshare/
 <hr />
 <h2 id="adding-new-data-interfaces">Adding New Data Interfaces<a class="headerlink" href="#adding-new-data-interfaces" title="Permanent link">&para;</a></h2>
 <h3 id="1-create-interface-function">1. Create Interface Function<a class="headerlink" href="#1-create-interface-function" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">stock_new_data_api</span><span class="p">(</span><span class="n">symbol</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">period</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;daily&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">stock_new_data_api</span><span class="p">(</span><span class="n">symbol</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">period</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;daily&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get new data from API.</span>
 
@@ -1389,7 +1389,7 @@ mypy<span class="w"> </span>akshare/
 <h3 id="2-add-to-module">2. Add to Module<a class="headerlink" href="#2-add-to-module" title="Permanent link">&para;</a></h3>
 <p>Add the function to the appropriate module file.</p>
 <h3 id="3-write-tests">3. Write Tests<a class="headerlink" href="#3-write-tests" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">test_stock_new_data_api</span><span class="p">():</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_stock_new_data_api</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Test the new data API.&quot;&quot;&quot;</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_new_data_api</span><span class="p">(</span><span class="s2">&quot;600519&quot;</span><span class="p">)</span>
     <span class="k">assert</span> <span class="ow">not</span> <span class="n">df</span><span class="o">.</span><span class="n">empty</span>

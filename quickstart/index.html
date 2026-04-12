@@ -1090,7 +1090,7 @@
 
 <hr />
 <h2 id="step-2-verify-installation">Step 2: Verify Installation<a class="headerlink" href="#step-2-verify-installation" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Print version and basic info</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ak</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
@@ -1100,7 +1100,7 @@
 <hr />
 <h2 id="step-3-your-first-query">Step 3: Your First Query<a class="headerlink" href="#step-3-your-first-query" title="Permanent link">&para;</a></h2>
 <h3 id="get-real-time-market-overview">Get Real-Time Market Overview<a class="headerlink" href="#get-real-time-market-overview" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get A-share market summary</span>
 <span class="n">market_summary</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_market_summary</span><span class="p">()</span>
@@ -1116,7 +1116,7 @@
 
 <hr />
 <h3 id="get-stock-historical-data">Get Stock Historical Data<a class="headerlink" href="#get-stock-historical-data" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get historical stock data</span>
 <span class="n">stock_df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zh_a_hist</span><span class="p">(</span>
@@ -1137,7 +1137,7 @@
 
 <hr />
 <h3 id="get-index-data">Get Index Data<a class="headerlink" href="#get-index-data" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get CSI 300 index historical data</span>
 <span class="n">index_df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">index_zh_a_hist</span><span class="p">(</span>
@@ -1151,7 +1151,7 @@
 
 <hr />
 <h3 id="get-fundamental-data">Get Fundamental Data<a class="headerlink" href="#get-fundamental-data" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get stock fundamentals</span>
 <span class="n">fund_df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_fundamental_flow</span><span class="p">(</span>
@@ -1277,7 +1277,7 @@
 <hr />
 <h2 id="data-output-formats">Data Output Formats<a class="headerlink" href="#data-output-formats" title="Permanent link">&para;</a></h2>
 <p>AKShare returns data in pandas DataFrame format:</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="c1"># Get data</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zh_a_hist</span><span class="p">(</span><span class="n">symbol</span><span class="o">=</span><span class="s2">&quot;000001&quot;</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="s2">&quot;daily&quot;</span><span class="p">,</span> <span class="n">start_date</span><span class="o">=</span><span class="s2">&quot;2024-01-01&quot;</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="s2">&quot;2024-01-31&quot;</span><span class="p">)</span>

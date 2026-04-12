@@ -1061,7 +1061,7 @@
 <h3 id="common-errors">Common Errors<a class="headerlink" href="#common-errors" title="Permanent link">&para;</a></h3>
 <h4 id="error-connection-refused">Error: "Connection refused"<a class="headerlink" href="#error-connection-refused" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code><span class="c1"># Check network connection</span>
-<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://akshare.akfamily.xyz&quot;</span><span class="p">)</span>
 </code></pre></div>
 
@@ -1073,14 +1073,14 @@
 
 <h4 id="error-rate-limit-exceeded">Error: "Rate limit exceeded"<a class="headerlink" href="#error-rate-limit-exceeded" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span><code><span class="c1"># Add delays between requests</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 
 <hr />
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <h3 id="1-data-validation">1. Data Validation<a class="headerlink" href="#1-data-validation" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">validate_data</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">validate_data</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Validate received data.&quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="ow">not</span> <span class="n">df</span><span class="o">.</span><span class="n">empty</span><span class="p">,</span> <span class="s2">&quot;DataFrame is empty&quot;</span>
     <span class="k">assert</span> <span class="s1">&#39;close&#39;</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="s2">&quot;Missing close column&quot;</span>
@@ -1089,7 +1089,7 @@
 </code></pre></div>
 
 <h3 id="2-fallback-sources">2. Fallback Sources<a class="headerlink" href="#2-fallback-sources" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">get_data_with_fallback</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_data_with_fallback</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Try multiple sources.&quot;&quot;&quot;</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zh_a_spot_em</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>
@@ -1101,7 +1101,7 @@
 </code></pre></div>
 
 <h3 id="3-version-checking">3. Version Checking<a class="headerlink" href="#3-version-checking" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;AKShare version: </span><span class="si">{</span><span class="n">ak</span><span class="o">.</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="c1"># Update regularly</span>

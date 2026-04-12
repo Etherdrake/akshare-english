@@ -948,10 +948,10 @@
 <hr />
 <h2 id="strategy-examples">Strategy Examples<a class="headerlink" href="#strategy-examples" title="Permanent link">&para;</a></h2>
 <h3 id="1-moving-average-crossover">1. Moving Average Crossover<a class="headerlink" href="#1-moving-average-crossover" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="k">def</span> <span class="nf">moving_average_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">short_window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">long_window</span><span class="o">=</span><span class="mi">60</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">moving_average_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">short_window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">long_window</span><span class="o">=</span><span class="mi">60</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Simple moving average crossover strategy.</span>
 
@@ -985,10 +985,10 @@
 
 <hr />
 <h3 id="2-rsi-strategy">2. RSI Strategy<a class="headerlink" href="#2-rsi-strategy" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="k">def</span> <span class="nf">rsi_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">oversold</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">overbought</span><span class="o">=</span><span class="mi">70</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rsi_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">period</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">oversold</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">overbought</span><span class="o">=</span><span class="mi">70</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    RSI-based trading strategy.</span>
 
@@ -1022,10 +1022,10 @@
 
 <hr />
 <h3 id="3-dual-thrust-strategy">3. Dual Thrust Strategy<a class="headerlink" href="#3-dual-thrust-strategy" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="k">def</span> <span class="nf">dual_thrust_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">dual_thrust_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Dual Thrust trading strategy.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1059,9 +1059,9 @@
 
 <hr />
 <h3 id="4-market-cap-strategy">4. Market Cap Strategy<a class="headerlink" href="#4-market-cap-strategy" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
 
-<span class="k">def</span> <span class="nf">market_cap_strategy</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">market_cap_strategy</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Market cap based strategy.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1088,10 +1088,10 @@
 
 <hr />
 <h3 id="5-macd-strategy">5. MACD Strategy<a class="headerlink" href="#5-macd-strategy" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="k">def</span> <span class="nf">macd_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">fast</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slow</span><span class="o">=</span><span class="mi">26</span><span class="p">,</span> <span class="n">signal</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">macd_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">fast</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slow</span><span class="o">=</span><span class="mi">26</span><span class="p">,</span> <span class="n">signal</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    MACD-based trading strategy.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1121,10 +1121,10 @@
 
 <hr />
 <h3 id="6-bollinger-bands-strategy">6. Bollinger Bands Strategy<a class="headerlink" href="#6-bollinger-bands-strategy" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">akshare</span> <span class="k">as</span> <span class="nn">ak</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="k">def</span> <span class="nf">bollinger_bands_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">std_dev</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bollinger_bands_strategy</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">std_dev</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Bollinger Bands trading strategy.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1152,7 +1152,7 @@
 <hr />
 <h2 id="backtesting-framework">Backtesting Framework<a class="headerlink" href="#backtesting-framework" title="Permanent link">&para;</a></h2>
 <h3 id="simple-backtest">Simple Backtest<a class="headerlink" href="#simple-backtest" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">backtest</span><span class="p">(</span><span class="n">strategy_func</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">initial_capital</span><span class="o">=</span><span class="mi">100000</span><span class="p">):</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">backtest</span><span class="p">(</span><span class="n">strategy_func</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">initial_capital</span><span class="o">=</span><span class="mi">100000</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Simple backtesting framework.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
