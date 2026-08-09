@@ -1267,6 +1267,110 @@
 </tbody>
 </table>
 <h2 id="_2">更新说明详情<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>1.18.83 fix: fix fund_portfolio_hold_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_etf_fund_info_em</span><span class="w"> </span><span class="n">接口因东方财富历史净值返回体新增字段而触发</span><span class="w"> </span><span class="nb">Len</span><span class="n">gth</span><span class="w"> </span><span class="n">mismatch</span><span class="w"> </span><span class="n">的问题</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_financial_fund_info_em</span><span class="w"> </span><span class="n">接口因</span><span class="w"> </span><span class="err">`</span><span class="n">pageSize</span><span class="o">=</span><span class="mf">10000</span><span class="err">`</span><span class="w"> </span><span class="n">失效导致返回空数据的问题</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_graded_fund_info_em</span><span class="w"> </span><span class="n">接口因东方财富历史净值返回体新增字段而触发</span><span class="w"> </span><span class="nb">Len</span><span class="n">gth</span><span class="w"> </span><span class="n">mismatch</span><span class="w"> </span><span class="n">的问题</span>
+</code></pre></div>
+
+<p>1.18.82 fix: fix fund_portfolio_hold_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_portfolio_hold_em</span><span class="w"> </span><span class="n">接口因东方财富</span><span class="w"> </span><span class="err">`</span><span class="kr">to</span><span class="n">pline</span><span class="o">=</span><span class="mf">10000</span><span class="err">`</span><span class="w"> </span><span class="n">失效而只能返回首屏摘要持仓的问题</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_szse_sector_summary</span><span class="w"> </span><span class="n">接口在查询深交所尚未发布月份时直接抛出</span><span class="w"> </span><span class="n">KeyError</span><span class="w"> </span><span class="n">的问题</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_etf_fund_info_em</span><span class="w"> </span><span class="n">接口因东方财富历史净值返回体新增字段而触发</span><span class="w"> </span><span class="nb">Len</span><span class="n">gth</span><span class="w"> </span><span class="n">mismatch</span><span class="w"> </span><span class="n">的问题</span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_financial_fund_info_em</span><span class="w"> </span><span class="n">接口因</span><span class="w"> </span><span class="err">`</span><span class="n">pageSize</span><span class="o">=</span><span class="mf">10000</span><span class="err">`</span><span class="w"> </span><span class="n">失效导致返回空数据的问题</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_graded_fund_info_em</span><span class="w"> </span><span class="n">接口因东方财富历史净值返回体新增字段而触发</span><span class="w"> </span><span class="nb">Len</span><span class="n">gth</span><span class="w"> </span><span class="n">mismatch</span><span class="w"> </span><span class="n">的问题</span>
+</code></pre></div>
+
+<p>1.18.81 fix: fix fund_value_estimation_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_value_estimation_em</span><span class="w"> </span><span class="n">接口在东方财富旧统一估值接口失效后持续返回空结果的问题</span>
+</code></pre></div>
+
+<p>1.18.80 fix: fix Xueqiu stock info interfaces</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_individual_basic_info_xq</span><span class="w"> </span><span class="n">系列接口在雪球返回登录态错误时抛出</span><span class="w"> </span><span class="n">KeyError</span><span class="w"> </span><span class="n">的问题</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_individual_spot_xq</span><span class="w"> </span><span class="n">接口在雪球返回登录态错误时抛出</span><span class="w"> </span><span class="n">KeyError</span><span class="w"> </span><span class="n">的问题</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">加固雪球热榜和内部交易接口的异常处理与空结果兜底逻辑</span>
+</code></pre></div>
+
+<p>1.18.79 fix: fix amac_aoin_info interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">amac_aoin_info</span><span class="w"> </span><span class="n">接口因</span><span class="w"> </span><span class="n">AMAC</span><span class="w"> </span><span class="n">分页参数变更导致的</span><span class="w"> </span><span class="n">JSONDecodeError</span><span class="w"> </span><span class="n">问题</span>
+</code></pre></div>
+
+<p>1.18.78 fix: fix fund_value_estimation_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_value_estimation_em</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.77 fix: fix futures_inventory_99 interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">futures_inventory_99</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.76 fix: fix Python 3.9 compatibility regression</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_portfolio_em</span><span class="w"> </span><span class="n">模块中</span><span class="err">`</span><span class="n">dict</span><span class="err">[</span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">str</span><span class="err">]</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="n">None</span><span class="err">`</span><span class="w"> </span><span class="n">类型注解导致的</span><span class="w"> </span><span class="n">Python</span><span class="w"> </span><span class="mf">3.9</span><span class="w"> </span><span class="n">导入报错问题</span>
+</code></pre></div>
+
+<p>1.18.75 fix: fix stock_gdfx_free_holding_detail_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_gdfx_free_holding_detail_em</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.74 fix: fix stock_margin_bse interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_margin_bse</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.73 fix: fix stock_sector_fund_flow_rank interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_sector_fund_flow_rank</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_info_global_cls</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">补充</span><span class="w"> </span><span class="n">Jin10</span><span class="w"> </span><span class="n">美国宏观与美联储利率接口的上游数据滞后说明</span>
+<span class="mf">4.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_individual_info_em</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">movie_boxoffice_realtime</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">6.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">movie_boxoffice_daily</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">7.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">movie_boxoffice_monthly</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">8.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">movie_boxoffice_yearly</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">9.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">movie_boxoffice_yearly_first_week</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">10.</span><span class="w"> </span><span class="n">清理</span><span class="w"> </span><span class="n">stock_hot_rank_em</span><span class="w"> </span><span class="n">接口</span><span class="w"> </span><span class="n">secids</span><span class="w"> </span><span class="n">参数中的无效后缀</span>
+<span class="mf">11.</span><span class="w"> </span><span class="n">清理</span><span class="w"> </span><span class="n">stock_hk_hot_rank_em</span><span class="w"> </span><span class="n">接口</span><span class="w"> </span><span class="n">secids</span><span class="w"> </span><span class="n">参数中的无效后缀</span>
+<span class="mf">12.</span><span class="w"> </span><span class="n">清理</span><span class="w"> </span><span class="n">stock_hot_up_em</span><span class="w"> </span><span class="n">接口</span><span class="w"> </span><span class="n">secids</span><span class="w"> </span><span class="n">参数中的无效后缀</span>
+<span class="mf">13.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_zh_a_gbjg_em</span><span class="w"> </span><span class="n">接口分页截断问题</span>
+<span class="mf">14.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_zh_a_hist_tx</span><span class="w"> </span><span class="n">接口的成交量</span><span class="err">、</span><span class="n">换手率和成交额字段语义</span>
+<span class="mf">15.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_rank_cxd_ths</span><span class="w"> </span><span class="n">接口表格解析异常</span>
+<span class="mf">16.</span><span class="w"> </span><span class="n">新增</span><span class="w"> </span><span class="n">stock_margin_bse</span><span class="err">、</span><span class="n">stock_margin_detail_bse</span><span class="w"> </span><span class="n">和</span><span class="w"> </span><span class="n">stock_margin_underlying_info_bse</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.72 fix: fix stock_cg_lawsuit_cninfo interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_cg_lawsuit_cninfo</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.71 fix: fix NBS macro interfaces</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">macro_china_urban_unemployment</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">macro_china_nbs_nation</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">macro_china_nbs_region</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.70 fix: fix stock_a_below_net_asset_statistics interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_a_below_net_asset_statistics</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.69 fix: fix stock_zh_a_hist_tx interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_zh_a_hist_tx</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.68 fix: fix index_realtime_sw interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">index_realtime_sw</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.67 fix: fix stock_zh_a_disclosure_report_cninfo interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_zh_a_disclosure_report_cninfo</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_zh_a_disclosure_relation_cninfo</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.66 fix: fix stock_yysj_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_yysj_em</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
+<p>1.18.65 fix: fix fund_portfolio_hold_em interface</p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_portfolio_hold_em</span><span class="w"> </span><span class="n">接口在</span><span class="w"> </span><span class="n">date</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="n">场景下的请求兼容问题</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_portfolio_bond_hold_em</span><span class="w"> </span><span class="n">接口</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">fund_portfolio_change_em</span><span class="w"> </span><span class="n">接口</span>
+</code></pre></div>
+
 <p>1.18.64 fix: fix stock_buffett_index_lg interface</p>
 <div class="codehilite"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_buffett_index_lg</span><span class="w"> </span><span class="n">接口</span>
 <span class="mf">2.</span><span class="w"> </span><span class="n">修复</span><span class="w"> </span><span class="n">stock_us_daily</span><span class="w"> </span><span class="n">接口</span>
