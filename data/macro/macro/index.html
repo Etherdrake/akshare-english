@@ -12083,8 +12083,8 @@
 <h4 id="_77">国家统计局通用接口<a class="headerlink" href="#_77" title="Permanent link">&para;</a></h4>
 <h5 id="_78">国家统计局全国数据<a class="headerlink" href="#_78" title="Permanent link">&para;</a></h5>
 <p>接口: macro_china_nbs_nation</p>
-<p>目标地址: https://data.stats.gov.cn/easyquery.htm</p>
-<p>描述: 国家统计局全国数据通用接口，包括月度数据、季度数据、年度数据，具体指标见数据官网。</p>
+<p>目标地址: https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData</p>
+<p>描述: 国家统计局全国数据通用接口，包括月度数据、季度数据、年度数据，具体指标见国家统计局新站官网。</p>
 <p>限量: 根据参数返回指定数据</p>
 <p>输入参数</p>
 <table>
@@ -12109,7 +12109,7 @@
 <tr>
 <td>period</td>
 <td>str</td>
-<td>时间区间 <br/>参考格式如下(英文逗号分割，且不能有多余空格)：<br/>    月：201201,201205<br/>    季：2012A,2012B,2012C,2012D<br/>    年：2012,2013 <br>    至今：2013-<br>    最近：last10</td>
+<td>时间区间 <br/>参考格式如下(英文逗号分割，且不能有多余空格)：<br/>    月：201201,201205<br/>    季：2012A,2012B,2012C,2012D<br/>    年：2012,2013 <br>    至今：2013-<br>    最近：last10；接口内部会自动兼容新站时间编码</td>
 </tr>
 </tbody>
 </table>
@@ -12148,8 +12148,8 @@
 
 <h5 id="_79">国家统计局地区数据<a class="headerlink" href="#_79" title="Permanent link">&para;</a></h5>
 <p>接口: macro_china_nbs_region</p>
-<p>目标地址: https://data.stats.gov.cn/easyquery.htm</p>
-<p>描述: 国家统计局地区数据通用接口，包括分省月度数据、分省季度数据、分省年度数据、主要城市月度价格、主要城市年度数据、港澳台月度数据、港澳台年度数据，具体指标见数据官网。</p>
+<p>目标地址: https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData</p>
+<p>描述: 国家统计局地区数据通用接口，包括分省月度数据、分省季度数据、分省年度数据、主要城市月度价格、主要城市年度数据、港澳台月度数据、港澳台年度数据，具体指标见国家统计局新站官网。</p>
 <p>限量: 根据参数返回指定数据</p>
 <p>输入参数</p>
 <table>
@@ -12184,7 +12184,7 @@
 <tr>
 <td>period</td>
 <td>str</td>
-<td>时间区间<br/>参考格式如下(英文逗号分割，且不能有多余空格)：<br/>    月：201201,201205<br/>    季：2012A,2012B,2012C,2012D<br/>    年：2012,2013 <br>    至今：2013-<br>    最近：last10</td>
+<td>时间区间<br/>参考格式如下(英文逗号分割，且不能有多余空格)：<br/>    月：201201,201205<br/>    季：2012A,2012B,2012C,2012D<br/>    年：2012,2013 <br>    至今：2013-<br>    最近：last10；接口内部会自动兼容新站时间编码</td>
 </tr>
 </tbody>
 </table>
@@ -13277,6 +13277,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_gdp</p>
 <p>描述: 美国国内生产总值(GDP)报告, 数据区间从 20080228-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -13519,6 +13520,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_core_cpi</p>
 <p>描述: 美国核心 CPI 月率报告, 数据区间从 19700101-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -13683,6 +13685,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_retail_sales</p>
 <p>描述: 美国零售销售月率报告, 数据区间从 19920301-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -14035,6 +14038,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_unemployment_rate</p>
 <p>描述: 美国失业率报告, 数据区间从 19700101-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -14200,6 +14204,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_nonfarm_payrolls</p>
 <p>描述: 美国非农就业人数报告, 数据区间从 19700102-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -14365,6 +14370,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_core_pce_price</p>
 <p>描述: 美国核心 PCE 物价指数年率报告, 数据区间从 19700101-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -15126,6 +15132,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_ism_pmi</p>
 <p>描述: 美国 ISM 制造业 PMI 报告, 数据区间从 19700101-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -15209,6 +15216,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_industrial_production</p>
 <p>描述: 美国工业产出月率报告, 数据区间从 19700101-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -15620,6 +15628,7 @@
 <p>目标地址: https://datacenter.jin10.com/reportType/dc_usa_ism_non_pmi</p>
 <p>描述: 美国 ISM 非制造业 PMI 报告, 数据区间从 19970801-至今</p>
 <p>限量: 单次返回所有历史数据</p>
+<p>说明: 当前接口使用 Jin10 历史数据接口; 经 2026-07 校验, 该上游链路未继续提供最新数据, 返回结果可能仅更新至 2025 年附近, 不代表 AKShare 本地缓存异常</p>
 <p>输入参数</p>
 <table>
 <thead>

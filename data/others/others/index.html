@@ -4132,6 +4132,7 @@
 <p>目标地址: https://ys.endata.cn/BoxOffice/Movie</p>
 <p>描述: 当前时刻的实时电影票房数据, 每 5 分钟更新一次数据, 实时票房包含今天未开映场次已售出的票房</p>
 <p>限量: 当前时刻的实时票房数据</p>
+<p>说明: 接口已切换至艺恩当前 <code>ys.endata.cn/enlib-api</code> 影片榜单接口, 输出金额统一按 <code>万</code> 进行换算</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4218,6 +4219,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Day/index.html</p>
 <p>描述: 指定日期的电影票房数据, 每日 10:30, 12:30更新日票房，16:30 同时补充前 7 日票房</p>
 <p>限量: 只能指定最近的日期</p>
+<p>说明: 接口已迁移至艺恩当前 <code>ys.endata.cn/enlib-api</code> 数据源; 由于新站公开列表未返回口碑字段, <code>口碑指数</code> 当前统一返回空值</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4318,6 +4320,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Week/oneWeek.html</p>
 <p>描述: 指定日期所在完整周的票房数据, 影片周票房数据初始更新周期为每周二，下周二补充数据</p>
 <p>限量: 指定日期所在完整周的票房数据</p>
+<p>说明: 艺恩新站公开周榜接口当前返回权限限制, 调用时会抛出明确的上游权限异常, 不再返回旧版 <code>JSONDecodeError</code></p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4423,6 +4426,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Month/oneMonth.html</p>
 <p>描述: 获取指定日期所在月份的票房数据, 每月5号更新上月票房，并补充之前两个月票房</p>
 <p>限量: 指定日期所在月份的票房数据, 只能获取最近月份的数据</p>
+<p>说明: 接口已迁移至艺恩当前 <code>ys.endata.cn/enlib-api</code> 数据源; 由于新站公开列表未返回口碑字段, <code>口碑指数</code> 当前统一返回空值</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4524,6 +4528,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Year/index.html</p>
 <p>描述: 指定日期所在年度的票房数据</p>
 <p>限量: 指定日期所在年度的票房数据, 只能获取最近年度的数据</p>
+<p>说明: 接口已迁移至艺恩当前 <code>ys.endata.cn/enlib-api</code> 数据源</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4634,6 +4639,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Year/firstWeek.html</p>
 <p>描述: 指定日期所在年度的年度首周票房数据</p>
 <p>限量: 指定日期所在年度的年度首周票房数据, 只能获取最近年度的数据</p>
+<p>说明: 接口已迁移至艺恩当前 <code>ys.endata.cn/enlib-api</code> 年榜数据源, 其中 <code>首周天数</code> 依据上映日期按首周自然周区间估算</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4732,6 +4738,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Cinema/day.html</p>
 <p>描述: 指定日期的每日各影院的票房数据</p>
 <p>限量: 指定日期各影院的票房数据, 注意当前日期的数据需要第二日才可以获取</p>
+<p>说明: 接口已迁移至艺恩当前 <code>ys.endata.cn/enlib-api</code> 数据源</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -4824,6 +4831,7 @@
 <p>目标地址: https://www.endata.com.cn/BoxOffice/BO/Cinema/week.html</p>
 <p>描述: 指定日期的完整周各影院的票房数据</p>
 <p>限量: 指定日期的完整周各影院的票房数据, 注意当前日期的数据只能返回上周的数据</p>
+<p>说明: 艺恩新站公开影院周榜接口当前返回系统错误, 调用时会抛出明确的上游权限异常, 不再返回旧版 <code>JSONDecodeError</code></p>
 <p>输入参数</p>
 <table>
 <thead>

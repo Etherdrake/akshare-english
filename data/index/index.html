@@ -7290,12 +7290,12 @@
 <tbody>
 <tr>
 <td>指数代码</td>
-<td>object</td>
+<td>str</td>
 <td>-</td>
 </tr>
 <tr>
 <td>指数简称</td>
-<td>object</td>
+<td>str</td>
 <td>-</td>
 </tr>
 <tr>
@@ -9380,6 +9380,7 @@
 <p>接口: sw_index_third_cons</p>
 <p>目标地址: https://legulegu.com/stockdata/index-composition?industryCode=851921.SI</p>
 <p>描述: 申万三级行业成份</p>
+<p>说明: 乐咕乐股当前表头已调整为 <code>申万3级</code>、<code>细分概念</code>、<code>ROE(%)</code> 以及带交易日后缀的涨幅字段; 接口会先清洗表头中的页面元数据噪声, 再按真实列名解析</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -9414,33 +9415,28 @@
 </tr>
 <tr>
 <td>股票代码</td>
-<td>object</td>
+<td>str</td>
 <td></td>
 </tr>
 <tr>
 <td>股票简称</td>
-<td>object</td>
+<td>str</td>
 <td></td>
 </tr>
 <tr>
 <td>纳入时间</td>
-<td>object</td>
-<td></td>
-</tr>
-<tr>
-<td>申万1级</td>
-<td>object</td>
-<td></td>
-</tr>
-<tr>
-<td>申万2级</td>
-<td>object</td>
+<td>str</td>
 <td></td>
 </tr>
 <tr>
 <td>申万3级</td>
-<td>object</td>
+<td>str</td>
 <td></td>
+</tr>
+<tr>
+<td>细分概念</td>
+<td>object</td>
+<td>该列可能为空</td>
 </tr>
 <tr>
 <td>价格</td>
@@ -9463,6 +9459,11 @@
 <td></td>
 </tr>
 <tr>
+<td>ROE(%)</td>
+<td>float64</td>
+<td>注意单位: %</td>
+</tr>
+<tr>
 <td>股息率</td>
 <td>float64</td>
 <td>注意单位: %</td>
@@ -9473,22 +9474,27 @@
 <td>注意单位: 亿元</td>
 </tr>
 <tr>
-<td>归母净利润同比增长(09-30)</td>
+<td>近1日涨幅(YYYY-MM-DD)</td>
 <td>float64</td>
 <td>注意单位: %</td>
 </tr>
 <tr>
-<td>归母净利润同比增长(06-30)</td>
+<td>近5日涨幅(YYYY-MM-DD)</td>
 <td>float64</td>
 <td>注意单位: %</td>
 </tr>
 <tr>
-<td>营业收入同比增长(09-30)</td>
+<td>今年以来涨幅(YYYY-MM-DD)</td>
 <td>float64</td>
 <td>注意单位: %</td>
 </tr>
 <tr>
-<td>营业收入同比增长(06-30)</td>
+<td>净利润增速(%)</td>
+<td>float64</td>
+<td>注意单位: %</td>
+</tr>
+<tr>
+<td>营收增速(%)</td>
 <td>float64</td>
 <td>注意单位: %</td>
 </tr>
@@ -9502,15 +9508,15 @@
 </code></pre></div>
 
 <p>数据示例</p>
-<div class="codehilite"><pre><span></span><code>   序号 股票代码  股票简称  ... 归母净利润同比增长(06-30) 营业收入同比增长(09-30) 营业收入同比增长(06-30)
-0   1  600313.SH  农发种业  ...          1433.66           35.62           18.57
-1   2  000713.SZ  丰乐种业  ...           -26.10            3.59           -5.45
-2   3  000998.SZ  隆平高科  ...          -421.52           55.20            6.98
-3   4  300087.SZ  荃银高科  ...           421.95           28.09           42.46
-4   5  300189.SZ  神农科技  ...           -39.18          -12.49          -12.68
-5   6  600371.SH  万向德农  ...           174.47           11.65            3.10
-6   7  600354.SH  敦煌种业  ...           -55.18           -8.59          -13.23
-7   8  002041.SZ  登海种业  ...             6.67           10.01            6.12
+<div class="codehilite"><pre><span></span><code>   序号       股票代码  股票简称        纳入时间 申万3级  细分概念    价格     市盈率  市盈率ttm   市净率  ROE(%)   股息率      市值  近1日涨幅(2026-08-07)  近5日涨幅(2026-08-07)  今年以来涨幅(2026-08-07)  净利润增速(%)  营收增速(%)
+0   1  600313.SH  农发种业  2011-01-10   种子   NaN  5.76   80.03  131.33  2.77    0.86  0.16   66.90              -3.19               2.13              -13.36    -63.25     5.33
+1   2  000713.SZ  国投丰乐  1997-04-22   种子   NaN  5.76   69.64   76.81  1.47   -0.53  0.52   45.98              -2.04               0.17              -16.89    -58.19   -11.27
+2   3  600371.SH  万向德农  2002-09-16   种子   NaN  7.05  372.13     NaN  3.84    0.20  1.42   20.63              -0.56               3.98              -23.88    -95.39   -37.05
+3   4  300087.SZ  ST荃银  2010-01-12   种子   NaN  5.32     NaN     NaN  2.97    0.67   NaN   50.40              -0.56               3.91              -53.86    418.29   -16.58
+4   5  000998.SZ  隆平高科  2000-06-29   种子   NaN  8.21   72.75  325.28  1.78   -1.95  0.51  120.64              -0.48              -2.26              -14.68  -6145.62   -35.56
+5   6  300189.SZ  神农种业  2011-03-16   种子   NaN  4.00     NaN     NaN  6.15    0.64   NaN   38.87              -0.25               4.17              -15.97  -1372.78   -20.56
+6   7  600354.SH  敦煌种业  2004-01-15   种子   NaN  6.17  665.44   73.73  3.68    0.55   NaN   53.28               0.00               3.18              -18.41     19.54   -18.50
+7   8  002041.SZ  登海种业  2004-06-29   种子   NaN  9.65   78.60   70.55  2.68    0.60  0.62   84.92               0.63               0.10               -9.05    -31.75   -25.14
 </code></pre></div>
 
 <h3 id="_24">商品现货价格指数<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
@@ -12569,8 +12575,8 @@
 <h4 id="_57">申万指数实时行情<a class="headerlink" href="#_57" title="Permanent link">&para;</a></h4>
 <p>接口: index_realtime_sw</p>
 <p>目标地址: https://www.swsresearch.com/institute_sw/allIndex/releasedIndex</p>
-<p>描述: 申万宏源研究-指数系列; 注意其中大类风格指数和金创指数的字段</p>
-<p>限量: 该接口返回指定 symbol 的数据</p>
+<p>描述: 申万宏源研究-指数系列; 注意其中大类风格指数和金创指数的字段与其他分类不同</p>
+<p>限量: 该接口返回指定 symbol 的数据; 源站无数据时返回空的 pandas.DataFrame</p>
 <p>输入参数</p>
 <table>
 <thead>
@@ -12588,6 +12594,12 @@
 </tr>
 </tbody>
 </table>
+<p>说明:</p>
+<ul>
+<li><code>symbol</code> 为 <code>"市场表征"</code>, <code>"一级行业"</code>, <code>"二级行业"</code>, <code>"风格指数"</code> 时, 返回字段为 <code>指数代码</code>, <code>指数名称</code>, <code>昨收盘</code>, <code>今开盘</code>, <code>最新价</code>, <code>成交额</code>, <code>成交量</code>, <code>最高价</code>, <code>最低价</code></li>
+<li><code>symbol</code> 为 <code>"大类风格指数"</code> 或 <code>"金创指数"</code> 时, 返回字段为 <code>指数代码</code>, <code>指数名称</code>, <code>昨收盘</code>, <code>日涨跌幅</code>, <code>年涨跌幅</code></li>
+<li>当前若源站对某一分类暂无实时数据, 接口会返回结构化空表</li>
+</ul>
 <p>输出参数</p>
 <table>
 <thead>
